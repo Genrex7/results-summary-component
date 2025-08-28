@@ -1,17 +1,19 @@
 // Fetch local JSON and populate dynamically
-fetch('/data.json')
-	.then((response) => response.json())
-	.then((data) => {
-		const container = document.querySelector('.scores-container');
+import data from './data.json';
 
-		// Loop through data and generate HTML
-		data.forEach((item) => {
-			const card = document.createElement('div');
-			card.className = `${item.category.toLowerCase()} p-4 rounded-xl flex justify-between ${
-				item.backgroundColor
-			} font-bold`;
+// fetch('/data.json')
+// 	.then((response) => response.json())
+// 	.then((data) => {
+const container = document.querySelector('.scores-container');
 
-			card.innerHTML = `
+// Loop through data and generate HTML
+data.forEach((item) => {
+	const card = document.createElement('div');
+	card.className = `${item.category.toLowerCase()} p-4 rounded-xl flex justify-between ${
+		item.backgroundColor
+	} font-bold`;
+
+	card.innerHTML = `
       <div class="left-side flex gap-3">
         <img src="${item.icon}" alt="${item.category} icon" />
         <p class="${item.color}">${item.category}</p>
@@ -24,13 +26,13 @@ fetch('/data.json')
       </div>
       `;
 
-			container.appendChild(card);
-		});
+	container.appendChild(card);
+});
 
-		const button = document.createElement('button');
-		button.className = `bg-Dark-Gray-Blue text-Pale-Blue w-full h-15 rounded-4xl hover:bg-linear-to-b from-Light-Slate-Blue to-Light-Royal-Blue cursor-pointer font-bold shadow-sm hover:shadow-blue-400/50`;
-		button.textContent = 'Continue';
+const button = document.createElement('button');
+button.className = `bg-Dark-Gray-Blue text-Pale-Blue w-full h-15 rounded-4xl hover:bg-linear-to-b from-Light-Slate-Blue to-Light-Royal-Blue cursor-pointer font-bold shadow-sm hover:shadow-blue-400/50`;
+button.textContent = 'Continue';
 
-		container.appendChild(button);
-	})
-	.catch((err) => console.error('Error loading JSON:', err));
+container.appendChild(button);
+// })
+// .catch((err) => console.error('Error loading JSON:', err));
