@@ -41,29 +41,39 @@
 
 */
 
-/* :root {
-	--Light-red: hsl(0, 100%, 67%);
-	--Orangey-yellow: hsl(39, 100%, 56%);
-	--Green-teal: hsl(166, 100%, 37%);
-	--Cobalt-blue: hsl(234, 85%, 45%);
+@theme {
+	--font-hansen: 'Hanken Grotesk';
 
+	/* Primary */
+	--color-Light-Red: hsl(0, 100%, 67%);
+	--color-Orangey-Yellow: hsl(39, 100%, 56%);
+	--color-Green-Teal: hsl(166, 100%, 37%);
+	--color-Cobalt-Blue: hsl(234, 85%, 45%);
 
-	--White: hsl(0, 0%, 100%);
-	--Pale-blue: hsl(221, 100%, 96%);
-	--Light-lavender: hsl(241, 100%, 89%);
-	--Dark-gray-blue: hsl(224, 30%, 27%);
+	--color-bg-Red: hsla(0, 100%, 67%, 0.08);
+	--color-bg-Orange: hsla(39, 100%, 56%, 0.08);
+	--color-bg-Green: hsla(166, 100%, 37%, 0.08);
+	--color-bg-Blue: hsla(234, 85%, 45%, 0.08);
 
-	--Light-slate-blue: hsl(252, 100%, 67%);
-	--Light-royal-blue: hsl(241, 81%, 54%);
+	/* Gradients */
+	--color-Light-Slate-Blue: hsl(252, 100%, 67%);
+	--color-Light-Royal-Blue: hsl(241, 81%, 54%);
 
-	--Violet-blue: hsla(256, 72%, 46%, 1);
-	--Persian-blue: hsla(241, 72%, 46%, 0);
+	--color-Violet-Blue: hsla(256, 72%, 46%, 1);
+	--color-Persian-Blue: hsla(241, 72%, 46%, 0);
+
+	/* Neutral */
+	--color-White: hsl(0, 0%, 100%);
+	--color-Pale-Blue: hsl(221, 100%, 96%);
+	--color-Light-Lavender: hsl(241, 100%, 89%);
+	--color-Dark-Gray-Blue: hsl(224, 30%, 27%);
+
+	--breakpoint-mobile: 23.4375rem;
+	--breakpoint-mobile-large: 26.5625rem;
+	--breakpoint-desktop: 90rem;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
-} */
+/* 
+1. top-8 left-9
+2. top-24, left-12
+ */
