@@ -1,8 +1,5 @@
 // Fetch local JSON and populate dynamically
 import data from './data.json';
-// import reactionIcon from 'src/images/icon-reaction.svg';
-// import memoryIcon from 'src/images/icon-memory.svg';
-// import
 
 // fetch('/data.json')
 // 	.then((response) => response.json())
