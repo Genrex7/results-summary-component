@@ -1,5 +1,5 @@
 // Fetch local JSON and populate dynamically
-fetch('./data.json')
+fetch('/data.json')
 	.then((response) => response.json())
 	.then((data) => {
 		const container = document.querySelector('.scores-container');
