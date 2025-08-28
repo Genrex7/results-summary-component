@@ -2,7 +2,7 @@
 	{
 		"category": "Reaction",
 		"score": 80,
-		"icon": "../images/icon-reaction.svg",
+		"icon": "../images/icon-memory.svg",
 		"backgroundColor": "bg-bg-Red",
 		"color": "text-Light-Red"
 	},
