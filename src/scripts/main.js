@@ -30,7 +30,7 @@ data.forEach((item) => {
 });
 
 const button = document.createElement('button');
-button.className = `bg-Dark-Gray-Blue text-Pale-Blue w-full h-15 rounded-4xl hover:bg-linear-to-b from-Light-Slate-Blue to-Light-Royal-Blue cursor-pointer font-bold shadow-sm hover:shadow-blue-400/50`;
+button.className = `bg-Dark-Gray-Blue text-Pale-Blue w-full h-15 rounded-4xl hover:bg-linear-to-b from-Light-Slate-Blue to-Light-Royal-Blue cursor-pointer font-bold shadow-sm hover:shadow-blue-400/50 my-4 mt-6`;
 button.textContent = 'Continue';
 
 container.appendChild(button);
